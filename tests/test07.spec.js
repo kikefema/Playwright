@@ -8,3 +8,6 @@ addEventListeneras
 DataTransfersda
 SVGDefsElementasd
 addEventListener
+addEventListenerasd
+addEventListenerasdasd
+addEventListenerasd
