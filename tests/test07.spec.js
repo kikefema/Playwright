@@ -4,3 +4,7 @@ SharedArrayBuffersdlas
 DelayNodesl
 AudioScheduledSourceNodealsd
 AudioScheduledSourceNodeasld
+addEventListeneras
+DataTransfersda
+SVGDefsElementasd
+addEventListener
