@@ -25,4 +25,6 @@ test('Test de navegación avanzada (atras, avanzar, recargar', async ({ page }) 
     console.log('URL verificada después de recargar la página');
 });
 // npx playwright test tests/test06.spec.js --headed
+// npx playwright test tests/test06.spec.js --headed
+// npx playwright test tests/test06.spec.js --headed
 
