@@ -11,3 +11,7 @@ addEventListener
 addEventListenerasd
 addEventListenerasdasd
 addEventListenerasd
+as
+da
+SVGDefsElementasdda
+sd
