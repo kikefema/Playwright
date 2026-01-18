@@ -1,22 +1,15 @@
-// Manejo de pestañas
+
+// Esperas de navegación
 const { test, expect } = require('@playwright/test');
-test('Test de manejo de pestañas', async ({ page, context }) => {
+
+test('Test de navegación avanzada con esperas', async ({ page }) => {
     await page.goto('https://demoqa.com/');
     console.log('Navegando a demoqa.com');
     await expect(page).toHaveTitle('DEMOQA');
     console.log('Título verificado');
-
-    console.log('Haciendo clic en IMAGEN');
-    const [newPage] = await Promise.all([
-        page.context().waitForEvent('page'),
-        await page.getByAltText('Selenium Online Training').click()
-               
-    ]);
-
-    await expect(newPage).toHaveTitle('Tools QA - Selenium Training');
-    console.log('Título verificado');
-
-    await newPage.waitForLoadState();
-    await newPage.close();
+    await page.click('text=Widgets');
+    console.log('Haciendo clic en Widgets');
+    await expect(page).toHaveURL(/.*widgets/);
+    console.log('URL verificada');
 });
-// npx playwright test tests/test06-02.spec.js --headed
+// npx playwright test tests/test06-01.spec.js --headed
