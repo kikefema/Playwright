@@ -45,4 +45,4 @@ test('Test clic simple', async ({ page }) => {
     console.log('Verificando el mensaje de clic simple');
 });
 
-// npx playwright test tests/test04.spec.js --headed 
+// npx playwright test tests/test04-01.spec.js --headed 
